@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-image: url(https://source.unsplash.com/1600x900/?landscape);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    justify-content: center;
+}
+.box{
+    width: 60%;
+    height: auto;
+    background-color: black;
+    opacity: 70%;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+}
+.col-md-12{
+    color: white;
+    margin-left: 25px;
+    margin-top: 1%;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 55%;
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #7c7c7c2b;
+    outline: none;
+    padding: 1em;
+    font-size: 120%;
+}
+::placeholder{
+    color: white;
+    font-size: 120%;
+}
+h1{
+    font-size: 80px;
+}
+button{
+    border-radius: 120px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: #7c7c7c2b;
+    margin: .5em;
+
+}
+button:hover{
+    background-color: #7c7c7c6b;
+
+}
+.description{
+    text-transform: capitalize;
+}
+
+.weather.loading{
+    visibility: hidden;
+}
+.weather.loadding.after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+}
